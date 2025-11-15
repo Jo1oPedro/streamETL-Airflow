@@ -1,0 +1,5 @@
+chmod -R 777 logs => da permisão para escrita no log
+python3 -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())" => Colocar o resultado no: AIRFLOW__CORE__FERNET_KEY
+getent group docker => colcoar o numero do resultado como group_add no docker-compose
+docker compose up airflow-init => Sobe o airflow
+docker compose up -d
